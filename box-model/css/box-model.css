@@ -16,7 +16,7 @@
     margin: 20px;
 }
 
-.box-tree {
+.box-three {
     background-color: brown;
     height: auto;
     width: auto;
@@ -27,6 +27,47 @@
 
 .box-four, .box-five {
     display: inline;
+    background-color: chartreuse;
+    padding: 5px;
+    border: black 12px solid;
+    margin: 10px;
+}
+
+.box-six{
+    display: flex;
+    background-color: aqua;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    border: black 12px solid;
+    margin: 20px
+}
+
+.box-seven, .box-nine {
+    background-color: chartreuse;
+    padding: 5px;
+    border: black 12px solid;
+    margin: 10px;
+}
+
+.box-eigth {
+    display: inline;
+    background-color: chartreuse;
+    padding: 5px;
+    border: black 12px solid;
+    margin: 10px;
+}
+
+.box-ten {
+    background-color: brown;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border: black 12px solid;
+    margin: 20px;
+}
+
+.box-eleven, .box-twelve, .box-thirteen {
     background-color: chartreuse;
     padding: 5px;
     border: black 12px solid;
