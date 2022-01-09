@@ -2,6 +2,7 @@
 
 :root{
     /** Global Variables **/
+    --page-centering: 60px 15%;
     --main-text-color: #F9FAF8;
     --main-text-color-tighten: #E5E7EB; 
 
@@ -22,6 +23,12 @@
     /** Global Spacings **/
     margin: 0px;
     height: 100vh;
+}
+
+/** Page Centering**/
+header, 
+section {
+    padding: var(--page-centering);
 }
 
 /** Fonts **/
@@ -54,7 +61,7 @@ header {
     background-color: var(--main-background-color);
     display: flex;
     flex-direction: column;
-    padding: 16px 15%;
+    padding: 16px 15% 60px;
 }
 
 header nav {
@@ -80,7 +87,6 @@ header nav .logo {
 header .hero {
     display: flex;
     gap: 16px;
-    margin-bottom: 60px;
 }
 
 header .hero .content h1,
@@ -108,10 +114,8 @@ header .hero .content a,
     justify-content: center;
     align-items: center;
     gap:32px;
-    margin-bottom: 60px;
 }
 
-.information-boxes h2, 
 .information-boxes .cards {
     margin-top: 30px;
 }
@@ -133,7 +137,6 @@ header .hero .content a,
 .quote-section {
     background-color: var(--secondary-background-color);
     color: var(--secondary-text-color);
-    padding: 76px 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,7 +151,6 @@ header .hero .content a,
 
 /** CTA **/
 .cta-section {
-    margin: 76px 15%;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-evenly;
