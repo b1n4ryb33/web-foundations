@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root{
+    /** Global Variables **/
+    --main-text-color: #F9FAF8;
+    --main-text-color-tighten: #E5E7EB; 
+
+    --secondary-text-color: #1F2937;
+    --secondary-text-color-ligthen: #1f2937;
+
+    --main-background-color: #1F2937;
+    --secondary-background-color: #E5E7EB;
+
+    --primary-color: #3882F6;
+
+    /** Global Colors **/
+    color: var(--main-text-color);
+
+    /** Global Font **/
+    font-family: 'Roboto', sans-serif;
+
+    /** Global Spacings **/
+    margin: 0px;
+    height: 100vh;
+}
+
+/** Fonts **/
+.hero-main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--main-text-color);
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: var(--main-text-color-tighten);
+}
+
+.information-header-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--secondary-text-color);
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--secondary-text-color-ligthen);
+}
+
+/** Header **/
+header {
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 16px 15%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+header nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+header .hero {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+header .hero .content h1,
+header .hero .content p {
+    margin-bottom: 16px;
+}
+
+header .hero .content a,
+.cta-section a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    color:var(--main-text-color);
+    background-color: var(--primary-color);
+    border-radius: 6px;
+}
+
+/** Information Boxes **/
+.information-boxes {
+    text-align: center;
+}
+
+.information-boxes .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:32px;
+    margin-bottom: 60px;
+}
+
+.information-boxes h2, 
+.information-boxes .cards {
+    margin-top: 30px;
+}
+
+.information-boxes .cards .card {
+    color: var(--secondary-text-color);
+    max-width: 200px;
+}
+
+.information-boxes .cards .card .img-plcaeholder {
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    border: var(--primary-color) 2px solid;
+    border-radius: 6px;
+}
+
+/** Quotes **/
+.quote-section {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    padding: 76px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-author {
+    font-size: 24px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+/** CTA **/
+.cta-section {
+    margin: 76px 15%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.cta-section .text-section {
+    padding: 32px 0px;
+}
+
+.cta-section a {
+    border: white 2px solid;
+}
+
+.cta-section .text-section h3{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+/** footer **/
+footer {
+    background-color: var(--main-background-color);
+    text-align: center;
+    padding: 32px 0px;
+}
