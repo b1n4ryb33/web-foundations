@@ -1,0 +1,75 @@
+:root {
+    --primary-color: 40,56,69;
+    --primary-color-accent: 32,44,57;
+    --secondary-color: 184,176,141;
+    --secondary-color-accent: 242,212,146; 
+    --accent-color: 242,149,89;
+    --main-font: monospace;
+    --main-font-size: 16px;
+    --main-font-weight: 400;
+}
+
+body {
+    font-family: var(--main-font, Courier);
+    font-size: var(--main-font-size, 16px);
+    font-weight: var(--main-font-weight, 400);
+    color: rgb(var(--secondary-color, rgb(184,176,141)));
+    background-color: rgb(var(--primary-color, rgb(40,56,69)));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#etch-a-sketch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 40px;
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(var(--secondary-color));
+    text-shadow: 0 0 .5rem black;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(var(--secondary-color));
+    text-shadow: 0 0 .2rem black;
+}
+
+div#grid-container {
+    display: grid;
+    height: 600px;
+    width: 800px;
+}
+
+div.field {
+    width: auto;
+    height: auto;
+    background-color:white;
+
+}
+
+button#clear-btn {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 25px 15px;
+    padding: 5px 15px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(var(--secondary-color));
+}
+
+button#clear-btn:hover {
+    background-color: rgb(var(--secondary-color-accent));
+    cursor: pointer;
+}
+
+

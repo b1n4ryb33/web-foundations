@@ -1,0 +1,89 @@
+:root {
+    --primary-color: 40,56,69;
+    --primary-color-accent: 32,44,57;
+    --secondary-color: 184,176,141;
+    --secondary-color-accent: 242,212,146; 
+    --accent-color: 242,149,89;
+
+    --main-font: monospace;
+    --main-font-size: 16px;
+    --main-font-weight: 400;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 15vh 45vh 40vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    "top"
+    "penguin"
+    "content";
+
+    font-family: var(--main-font, Courier);
+    font-size: var(--main-font-size);
+    font-weight: var(--main-font-weight);
+
+    background-color: rgb(var(--primary-color));
+}
+
+header {
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+section#penguin {
+    grid-area: penguin;
+}
+
+section#content-area {
+    grid-area: content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+
+    color: #fafafa;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(var(--secondary-color));
+    text-shadow: 0 0 .5rem black;
+}
+
+section#content-area div.keys {
+    display: flex;
+    flex-direction: row;
+}
+
+div.keys div.key {
+    margin: 15px;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: rgba(var(--primary-color-accent), 0.5);
+    border: 4px solid rgb(var(--primary-color-accent));
+    border-radius: 10px;
+    transition: all .07s ease;
+    text-shadow: 0 0 .5rem black;
+}
+
+div.key span.sound {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    color: rgb(var(--secondary-color-accent));
+}
+
+div.key kbd {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .playing {
+    transform: scale(1.1);
+    border-color: rgb(var(--secondary-color-accent));
+    box-shadow: 0 0 1rem rgb(var(--secondary-color-accent));
+  }
