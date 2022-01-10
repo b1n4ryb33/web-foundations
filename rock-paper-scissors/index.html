@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock, Paper and Scissors</title>
+        
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        
+    </head>
+    <body>
+
+        <header id="header">
+            <h1>Rock, Paper and Scissor - Have Fun!</h1>
+        </header>
+
+        <section id="game">
+            <h2 id="round-headline"> </h2>
+            <div id="cards">
+                <button id="rock" class="card" title="rock">
+                    <i class="fas fa-hand-rock"></i>
+                </button>
+                <button id="paper" class="card" title="paper">
+                    <i class="fas fa-hand-paper"></i>
+                </button>
+                <button id="scissor" class="card" title="scissor">
+                    <i class="fas fa-hand-scissors"></i>
+                </button>   
+            </div>        
+        <p id="result"></p>
+        <button id="replay" class="card" title="replay">
+            <i class="fas fa-redo"></i>
+        </button>
+        </section>
+
+        <script src="scripts/game.js"></script>
+    </body>
+</html>
