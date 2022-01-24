@@ -21,7 +21,7 @@ function removeTransition(e) {
   }
 
   function stopDancing(){
-    wait(2000);
+ 
     const rightHand = document.querySelector('.right-hand');
     const leftHand = document.querySelector('.left-hand');
     rightHand.classList.remove('dancing');
